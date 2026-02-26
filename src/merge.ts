@@ -15,60 +15,60 @@ export function merge(
     let k = length_3 - 1;
 
     while (i < length_1 && j < length_2 && k >= 0) {
-        if (collection_1[i] <= collection_2[j] && collection_1[i] <= collection_3[k]) {
-            result.push(collection_1[i]);
+        if (collection_1[i]! <= collection_2[j]! && collection_1[i]! <= collection_3[k]!) {
+            result.push(collection_1[i]!);
             i++;
-        } else if (collection_2[j] <= collection_1[i] && collection_2[j] <= collection_3[k]) {
-            result.push(collection_2[j]);
+        } else if (collection_2[j]! <= collection_1[i]! && collection_2[j]! <= collection_3[k]!) {
+            result.push(collection_2[j]!);
             j++;
         } else {
-            result.push(collection_3[k]);
+            result.push(collection_3[k]!);
             k--;
         }
     }
 
     while (i < length_1 && j < length_2) {
-        if (collection_1[i] <= collection_2[j]) {
-            result.push(collection_1[i]);
+        if (collection_1[i]! <= collection_2[j]!) {
+            result.push(collection_1[i]!);
             i++;
         } else {
-            result.push(collection_2[j]);
+            result.push(collection_2[j]!);
             j++;
         }
     }
 
     while (i < length_1 && k >= 0) {
-        if (collection_1[i] <= collection_3[k]) {
-            result.push(collection_1[i]);
+        if (collection_1[i]! <= collection_3[k]!) {
+            result.push(collection_1[i]!);
             i++;
         } else {
-            result.push(collection_3[k]);
+            result.push(collection_3[k]!);
             k--;
         }
     }
 
     while (j < length_2 && k >= 0) {
-        if (collection_2[j] <= collection_3[k]) {
-            result.push(collection_2[j]);
+        if (collection_2[j]! <= collection_3[k]!) {
+            result.push(collection_2[j]!);
             j++;
         } else {
-            result.push(collection_3[k]);
+            result.push(collection_3[k]!);
             k--;
         }
     }
 
     while (i < length_1) {
-        result.push(collection_1[i]);
+        result.push(collection_1[i]!);
         i++;
     }
 
     while (j < length_2) {
-        result.push(collection_2[j]);
+        result.push(collection_2[j]!);
         j++;
     }
 
     while (k >= 0) {
-        result.push(collection_3[k]);
+        result.push(collection_3[k]!);
         k--;
     }
 
