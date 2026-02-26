@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Compiled output (even if you don't have it yet, it's good practice)
+dist/
+build/
+
+# Testing coverage reports
+coverage/
+
+# OS generated files (if you are on a Mac)
+.DS_Store
